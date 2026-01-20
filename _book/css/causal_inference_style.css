@@ -23,6 +23,13 @@ h1, h2, h3 {
   font-family: 'Roboto';
 }
 
+/* Paragraph indentation for Chinese reading flow */
+.content p {
+  text-indent: 2em;
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
 .sidebar h1 {
   font-size: 1.5rem;
 }
