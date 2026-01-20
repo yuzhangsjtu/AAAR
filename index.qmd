@@ -1,7 +1,7 @@
 # Welcome {.unnumbered}
 
-This is the landing page for your Quarto book. Use it to introduce the project,
-explain the audience, and link to code, data, or teaching materials.
+这是一个用于展示排版和视觉效果的封面页。我在这里补充了多种
+Markdown 元素，方便你快速判断整体的排版质感与细节风格。
 
 ::: {.cover-box .shadow-md}
 ## Buy Today!
@@ -16,11 +16,48 @@ Open access • Print version coming soon.
 </div>
 :::
 
-## How to use this book
+## 快速导览
 
-Briefly explain how readers should move through chapters, and what the
-prerequisites are.
+本书面向从本科生到教授的读者。你可以按“能力模块”阅读，
+也可以按“科研工作流”顺序阅读。
+
+### 重点提示
+
+> AI擅长生成，但不擅长负责。使用AI的关键在于验证与责任分配。
+
+### 关键原则（有序列表）
+
+1. 先定义问题，再让AI参与。
+2. 先验证证据，再相信输出。
+3. 先记录流程，再扩展规模。
+
+### 工具与流程（无序列表）
+
+- 文献：综述不是堆摘要，而是证据链。
+- 数据：清洗的透明性决定可信度。
+- 写作：表达是结果，逻辑是核心。
+
+### 表格示例
+
+| 模块 | 典型任务 | 主要风险 |
+| --- | --- | --- |
+| 信息压缩 | 文献综述 | 幻觉引用 |
+| 数据处理 | 清洗/结构化 | 规则不透明 |
+| 写作表达 | 初稿/润色 | 逻辑空洞 |
+
+### 代码块示例
+
+```text
+你是我的研究助理。请将下面的研究问题拆解成可检验的子问题，
+并给出潜在的数据来源与方法路径。输出为列表。
+```
+
+### 分隔线
+
+---
 
 ## Code and data
 
-Add links to your repository and datasets here.
+代码与数据：  
+- GitHub: https://github.com/yuzhangsjtu/AAAR  
+- 站点: https://yuzhangsjtu.github.io/AAAR/
