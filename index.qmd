@@ -77,6 +77,34 @@ Open access • Print version coming soon.
 - 仓库链接：<https://github.com/yuzhangsjtu/AAAR>
 - 行内代码示例：使用 `quarto render` 重新生成站点
 
+### 公式示例
+
+这是一条行内公式：$E[X]=\\sum_i x_i p_i$，以及一个块级公式：
+
+$$
+\\hat{\\tau} = \\frac{1}{N}\\sum_{i=1}^{N}(Y_i^1 - Y_i^0)
+$$
+
+### 任务列表
+
+- [x] 完成大纲
+- [x] 生成示例页面
+- [ ] 补充案例
+- [ ] 进一步润色正文
+
+### 注脚与脚注引用
+
+这是一个脚注示例。[^note]
+
+[^note]: 这是脚注内容，用于测试排版与字号。
+
+### 折叠块
+
+::: {.callout-tip collapse="true"}
+## 折叠内容
+这里是折叠块的内容，用来展示 Anthropic 风格下的折叠区域样式。
+:::
+
 ### 分隔线
 
 ---

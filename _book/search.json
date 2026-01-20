@@ -24,7 +24,7 @@
     "href": "index.html#快速导览",
     "title": "AAAR：AI加速学术研究的方法论与经验",
     "section": "快速导览",
-    "text": "快速导览\n本书面向从本科生到教授的读者。你可以按“能力模块”阅读， 也可以按“科研工作流”顺序阅读。\n\n重点提示\n\nAI擅长生成，但不擅长负责。使用AI的关键在于验证与责任分配。\n\n\n\n关键原则（有序列表）\n\n先定义问题，再让AI参与。\n先验证证据，再相信输出。\n先记录流程，再扩展规模。\n\n\n\n工具与流程（无序列表）\n\n文献：综述不是堆摘要，而是证据链。\n数据：清洗的透明性决定可信度。\n写作：表达是结果，逻辑是核心。\n\n\n\n表格示例\n\n\n\n模块\n典型任务\n主要风险\n\n\n\n\n信息压缩\n文献综述\n幻觉引用\n\n\n数据处理\n清洗/结构化\n规则不透明\n\n\n写作表达\n初稿/润色\n逻辑空洞\n\n\n\n\n\n图片示例\n\n\n\n封面示例\n\n\n\n\n代码块示例\n你是我的研究助理。请将下面的研究问题拆解成可检验的子问题，\n并给出潜在的数据来源与方法路径。输出为列表。\n\n\n引用与引用框\n\n“AI擅长生成，但不擅长负责。”\n——写作时请把证据链放在第一位。\n\n\n\n\n\n\n\n提示\n\n\n\n把 AI 当作“加速器”，不要当作“裁判”。\n\n\n\n\n\n\n\n\n警告\n\n\n\n不要把未发表的数据或敏感信息直接交给模型。\n\n\n\n\n超链接与行内代码\n\n官网链接：https://yuzhangsjtu.github.io/AAAR/\n仓库链接：https://github.com/yuzhangsjtu/AAAR\n行内代码示例：使用 quarto render 重新生成站点\n\n\n\n分隔线",
+    "text": "快速导览\n本书面向从本科生到教授的读者。你可以按“能力模块”阅读， 也可以按“科研工作流”顺序阅读。\n\n重点提示\n\nAI擅长生成，但不擅长负责。使用AI的关键在于验证与责任分配。\n\n\n\n关键原则（有序列表）\n\n先定义问题，再让AI参与。\n先验证证据，再相信输出。\n先记录流程，再扩展规模。\n\n\n\n工具与流程（无序列表）\n\n文献：综述不是堆摘要，而是证据链。\n数据：清洗的透明性决定可信度。\n写作：表达是结果，逻辑是核心。\n\n\n\n表格示例\n\n\n\n模块\n典型任务\n主要风险\n\n\n\n\n信息压缩\n文献综述\n幻觉引用\n\n\n数据处理\n清洗/结构化\n规则不透明\n\n\n写作表达\n初稿/润色\n逻辑空洞\n\n\n\n\n\n图片示例\n\n\n\n封面示例\n\n\n\n\n代码块示例\n你是我的研究助理。请将下面的研究问题拆解成可检验的子问题，\n并给出潜在的数据来源与方法路径。输出为列表。\n\n\n引用与引用框\n\n“AI擅长生成，但不擅长负责。”\n——写作时请把证据链放在第一位。\n\n\n\n\n\n\n\n提示\n\n\n\n把 AI 当作“加速器”，不要当作“裁判”。\n\n\n\n\n\n\n\n\n警告\n\n\n\n不要把未发表的数据或敏感信息直接交给模型。\n\n\n\n\n超链接与行内代码\n\n官网链接：https://yuzhangsjtu.github.io/AAAR/\n仓库链接：https://github.com/yuzhangsjtu/AAAR\n行内代码示例：使用 quarto render 重新生成站点\n\n\n\n公式示例\n这是一条行内公式：\\(E[X]=\\\\sum_i x_i p_i\\)，以及一个块级公式：\n\\[\n\\\\hat{\\\\tau} = \\\\frac{1}{N}\\\\sum_{i=1}^{N}(Y_i^1 - Y_i^0)\n\\]\n\n\n任务列表\n\n完成大纲\n生成示例页面\n补充案例\n进一步润色正文\n\n\n\n注脚与脚注引用\n这是一个脚注示例。1\n\n\n折叠块\n\n\n\n\n\n\n折叠内容\n\n\n\n\n\n这里是折叠块的内容，用来展示 Anthropic 风格下的折叠区域样式。\n\n\n\n\n\n分隔线",
     "crumbs": [
       "Welcome"
     ]
@@ -35,6 +35,16 @@
     "title": "AAAR：AI加速学术研究的方法论与经验",
     "section": "Code and data",
     "text": "Code and data\n代码与数据：\n- GitHub: https://github.com/yuzhangsjtu/AAAR\n- 站点: https://yuzhangsjtu.github.io/AAAR/",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "index.html#footnotes",
+    "href": "index.html#footnotes",
+    "title": "AAAR：AI加速学术研究的方法论与经验",
+    "section": "",
+    "text": "这是脚注内容，用于测试排版与字号。↩︎",
     "crumbs": [
       "Welcome"
     ]
