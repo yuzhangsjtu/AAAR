@@ -2,12 +2,12 @@ project:
   type: book
 
 book:
-  title: "<span style='font-weight: 700'>Causal Inference</span><br><i style='color: #00b7ff'>The Mixtape</i>"
-  output-file: "causal-inference-mixtape"
-  author: "Your Name"
-  date: "2026-01-15"
-  site-url: "https://example.com"
-  repo-url: "https://github.com/yourname/yourbook"
+  title: "AAAR：AI加速学术研究的方法论与经验"
+  output-file: "aaar-ai-accelerating-academic-research"
+  author: "Zhang Yu"
+  date: "2026-01-20"
+  site-url: "https://yuzhangsjtu.github.io/AAAR/"
+  repo-url: "https://github.com/yuzhangsjtu/AAAR"
   repo-actions: [issue]
   downloads: [pdf]
   chapters:
@@ -47,7 +47,7 @@ format:
   pdf:
     documentclass: scrreprt
     toc: true
-    output-file: causal-inference-mixtape.pdf
+    output-file: aaar-ai-accelerating-academic-research.pdf
     include-in-header: includes/pdf-title-font.tex
     mainfont: "PingFang SC"
     sansfont: "PingFang SC"

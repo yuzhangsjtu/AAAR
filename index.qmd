@@ -6,13 +6,13 @@ explain the audience, and link to code, data, or teaching materials.
 ::: {.cover-box .shadow-md}
 ## Buy Today!
 
-**Your Book Title**  
-Print version coming soon.
+**AAAR：AI加速学术研究的方法论与经验**  
+Open access • Print version coming soon.
 
 <div class="cover-actions">
   <a href="#">Buy from Amazon</a>
   <a href="#">Buy from Publisher</a>
-  <a href="causal-inference-mixtape.pdf">Download PDF</a>
+  <a href="aaar-ai-accelerating-academic-research.pdf">Download PDF</a>
 </div>
 :::
 

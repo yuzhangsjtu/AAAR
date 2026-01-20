@@ -1,5 +1,45 @@
 [
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "AAAR：AI加速学术研究的方法论与经验",
+    "section": "",
+    "text": "Welcome\nThis is the landing page for your Quarto book. Use it to introduce the project, explain the audience, and link to code, data, or teaching materials.",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "index.html#buy-today",
+    "href": "index.html#buy-today",
+    "title": "AAAR：AI加速学术研究的方法论与经验",
+    "section": "Buy Today!",
+    "text": "Buy Today!\nAAAR：AI加速学术研究的方法论与经验\nOpen access • Print version coming soon.\n\nBuy from Amazon Buy from Publisher Download PDF",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "index.html#how-to-use-this-book",
+    "href": "index.html#how-to-use-this-book",
+    "title": "AAAR：AI加速学术研究的方法论与经验",
+    "section": "How to use this book",
+    "text": "How to use this book\nBriefly explain how readers should move through chapters, and what the prerequisites are.",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "index.html#code-and-data",
+    "href": "index.html#code-and-data",
+    "title": "AAAR：AI加速学术研究的方法论与经验",
+    "section": "Code and data",
+    "text": "Code and data\nAdd links to your repository and datasets here.",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
     "objectID": "outline/00-序章-为什么写这本书.html",
     "href": "outline/00-序章-为什么写这本书.html",
     "title": "1  序章｜为什么写这本书",
@@ -197,46 +237,6 @@
     "text": "本书后续版本将提供以下配套材料，全部开源更新：\n\nAI科研工具箱清单（按任务分类）\n提示词模板与工作流脚本（可复用）\n案例复现材料与数据链接（含版本号）\nAI使用伦理与声明模板（投稿与答辩场景）\n\n附录的目的不是堆工具，而是让方法论落地。读者可以根据自己的研究领域替换工具，但不应跳过验证与记录步骤。",
     "crumbs": [
       "<span class='chapter-number'>20</span>  <span class='chapter-title'>附录（可选）</span>"
-    ]
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Causal InferenceThe Mixtape",
-    "section": "",
-    "text": "Welcome\nThis is the landing page for your Quarto book. Use it to introduce the project, explain the audience, and link to code, data, or teaching materials.",
-    "crumbs": [
-      "Welcome"
-    ]
-  },
-  {
-    "objectID": "index.html#buy-today",
-    "href": "index.html#buy-today",
-    "title": "Causal InferenceThe Mixtape",
-    "section": "Buy Today!",
-    "text": "Buy Today!\nYour Book Title\nPrint version coming soon.\n\nBuy from Amazon Buy from Publisher Download PDF",
-    "crumbs": [
-      "Welcome"
-    ]
-  },
-  {
-    "objectID": "index.html#how-to-use-this-book",
-    "href": "index.html#how-to-use-this-book",
-    "title": "Causal InferenceThe Mixtape",
-    "section": "How to use this book",
-    "text": "How to use this book\nBriefly explain how readers should move through chapters, and what the prerequisites are.",
-    "crumbs": [
-      "Welcome"
-    ]
-  },
-  {
-    "objectID": "index.html#code-and-data",
-    "href": "index.html#code-and-data",
-    "title": "Causal InferenceThe Mixtape",
-    "section": "Code and data",
-    "text": "Code and data\nAdd links to your repository and datasets here.",
-    "crumbs": [
-      "Welcome"
     ]
   }
 ]
