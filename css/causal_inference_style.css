@@ -136,6 +136,20 @@ div.sidebar-item-container .sidebar-link > code {
   color: #5e5d59;
 }
 
+/* Footnote list styling */
+.footnotes {
+  font-size: 0.95rem;
+  color: #4f4f4f;
+}
+
+.footnotes ol {
+  padding-left: 1.2rem;
+}
+
+.footnotes li {
+  margin-bottom: 0.6rem;
+}
+
 /* Table of contents */
 h1 small {
   display: block;
