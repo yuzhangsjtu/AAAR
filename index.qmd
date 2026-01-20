@@ -100,7 +100,7 @@ $$
 
 ### 引用文献与参考文献
 
-这是一条文献引用示例：@knuth84。
+这是一条文献引用示例[@knuth84]，引用会自动生成参考文献列表。
 
 ### 折叠块
 
@@ -129,8 +129,9 @@ $$ {#eq-ate}
 
 在正文中引用该图：见图 @fig-workflow。
 
-## Code and data
+## 代码与数据
 
-代码与数据：  
-- GitHub: https://github.com/yuzhangsjtu/AAAR  
-- 站点: https://yuzhangsjtu.github.io/AAAR/
+本书所有内容均开源：
+
+- 代码仓库：<https://github.com/yuzhangsjtu/AAAR>
+- 在线阅读：<https://yuzhangsjtu.github.io/AAAR/>
