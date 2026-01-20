@@ -79,10 +79,10 @@ Open access • Print version coming soon.
 
 ### 公式示例
 
-这是一条行内公式：$E[X]=\\sum_i x_i p_i$，以及一个块级公式：
+这是一条行内公式：$E[X]=\sum_i x_i p_i$，以及一个块级公式：
 
 $$
-\\hat{\\tau} = \\frac{1}{N}\\sum_{i=1}^{N}(Y_i^1 - Y_i^0)
+\hat{\tau} = \frac{1}{N}\sum_{i=1}^{N}(Y_i^1 - Y_i^0)
 $$
 
 ### 任务列表
@@ -118,7 +118,7 @@ $$
 带编号的公式如下：
 
 $$
-\\tau = E[Y(1) - Y(0)]
+\tau = E[Y(1) - Y(0)]
 $$ {#eq-ate}
 
 在正文中引用该公式：见公式 @eq-ate。
