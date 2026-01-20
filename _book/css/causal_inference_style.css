@@ -136,6 +136,26 @@ div.sidebar-item-container .sidebar-link > code {
   color: #5e5d59;
 }
 
+/* Content list styling */
+.content ul,
+#quarto-document-content ul {
+  list-style-type: disc;
+  padding-left: 2em;
+  margin-bottom: 1em;
+}
+
+.content ol,
+#quarto-document-content ol {
+  list-style-type: decimal;
+  padding-left: 2em;
+  margin-bottom: 1em;
+}
+
+.content li,
+#quarto-document-content li {
+  margin-bottom: 0.4em;
+}
+
 /* Footnote list styling */
 .footnotes {
   font-size: 0.95rem;
