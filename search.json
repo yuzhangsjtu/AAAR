@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "AAAR：AI加速学术研究的方法论与经验",
     "section": "",
-    "text": "Welcome\nThis is the landing page for your Quarto book. Use it to introduce the project, explain the audience, and link to code, data, or teaching materials.",
+    "text": "Welcome\n这是一个用于展示排版和视觉效果的封面页。我在这里补充了多种 Markdown 元素，方便你快速判断整体的排版质感与细节风格。",
     "crumbs": [
       "Welcome"
     ]
@@ -20,11 +20,11 @@
     ]
   },
   {
-    "objectID": "index.html#how-to-use-this-book",
-    "href": "index.html#how-to-use-this-book",
+    "objectID": "index.html#快速导览",
+    "href": "index.html#快速导览",
     "title": "AAAR：AI加速学术研究的方法论与经验",
-    "section": "How to use this book",
-    "text": "How to use this book\nBriefly explain how readers should move through chapters, and what the prerequisites are.",
+    "section": "快速导览",
+    "text": "快速导览\n本书面向从本科生到教授的读者。你可以按“能力模块”阅读， 也可以按“科研工作流”顺序阅读。\n\n重点提示\n\nAI擅长生成，但不擅长负责。使用AI的关键在于验证与责任分配。\n\n\n\n关键原则（有序列表）\n\n先定义问题，再让AI参与。\n先验证证据，再相信输出。\n先记录流程，再扩展规模。\n\n\n\n工具与流程（无序列表）\n\n文献：综述不是堆摘要，而是证据链。\n数据：清洗的透明性决定可信度。\n写作：表达是结果，逻辑是核心。\n\n\n\n表格示例\n\n\n\n模块\n典型任务\n主要风险\n\n\n\n\n信息压缩\n文献综述\n幻觉引用\n\n\n数据处理\n清洗/结构化\n规则不透明\n\n\n写作表达\n初稿/润色\n逻辑空洞\n\n\n\n\n\n代码块示例\n你是我的研究助理。请将下面的研究问题拆解成可检验的子问题，\n并给出潜在的数据来源与方法路径。输出为列表。\n\n\n分隔线",
     "crumbs": [
       "Welcome"
     ]
@@ -34,7 +34,7 @@
     "href": "index.html#code-and-data",
     "title": "AAAR：AI加速学术研究的方法论与经验",
     "section": "Code and data",
-    "text": "Code and data\nAdd links to your repository and datasets here.",
+    "text": "Code and data\n代码与数据：\n- GitHub: https://github.com/yuzhangsjtu/AAAR\n- 站点: https://yuzhangsjtu.github.io/AAAR/",
     "crumbs": [
       "Welcome"
     ]
