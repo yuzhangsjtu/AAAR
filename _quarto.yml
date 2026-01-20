@@ -48,6 +48,9 @@ format:
     documentclass: scrreprt
     toc: true
     output-file: aaar-ai-accelerating-academic-research.pdf
+    geometry:
+      - margin=1in
+    fontsize: 11pt
     include-in-header: includes/pdf-title-font.tex
     mainfont: "PingFang SC"
     sansfont: "PingFang SC"
