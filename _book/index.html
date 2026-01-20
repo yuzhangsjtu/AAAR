@@ -22,7 +22,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -296,8 +316,11 @@ window.Quarto = {
   <li><a href="#公式示例" id="toc-公式示例" class="nav-link" data-scroll-target="#公式示例">公式示例</a></li>
   <li><a href="#任务列表" id="toc-任务列表" class="nav-link" data-scroll-target="#任务列表">任务列表</a></li>
   <li><a href="#注脚与脚注引用" id="toc-注脚与脚注引用" class="nav-link" data-scroll-target="#注脚与脚注引用">注脚与脚注引用</a></li>
+  <li><a href="#引用文献与参考文献" id="toc-引用文献与参考文献" class="nav-link" data-scroll-target="#引用文献与参考文献">引用文献与参考文献</a></li>
   <li><a href="#折叠块" id="toc-折叠块" class="nav-link" data-scroll-target="#折叠块">折叠块</a></li>
   <li><a href="#分隔线" id="toc-分隔线" class="nav-link" data-scroll-target="#分隔线">分隔线</a></li>
+  <li><a href="#公式编号与引用" id="toc-公式编号与引用" class="nav-link" data-scroll-target="#公式编号与引用">公式编号与引用</a></li>
+  <li><a href="#图注与交叉引用" id="toc-图注与交叉引用" class="nav-link" data-scroll-target="#图注与交叉引用">图注与交叉引用</a></li>
   </ul></li>
   <li><a href="#code-and-data" id="toc-code-and-data" class="nav-link" data-scroll-target="#code-and-data">Code and data</a></li>
   </ul></li>
@@ -478,6 +501,10 @@ Open access • Print version coming soon.</p>
 <h3 class="anchored" data-anchor-id="注脚与脚注引用">注脚与脚注引用</h3>
 <p>这是一个脚注示例。<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
 </section>
+<section id="引用文献与参考文献" class="level3">
+<h3 class="anchored" data-anchor-id="引用文献与参考文献">引用文献与参考文献</h3>
+<p>这是一条文献引用示例：<span class="citation" data-cites="knuth84">Knuth (<a href="#ref-knuth84" role="doc-biblioref">1984</a>)</span>。</p>
+</section>
 <section id="折叠块" class="level3">
 <h3 class="anchored" data-anchor-id="折叠块">折叠块</h3>
 <div class="callout callout-style-default callout-tip callout-titled">
@@ -501,6 +528,28 @@ Open access • Print version coming soon.</p>
 <h3 class="anchored" data-anchor-id="分隔线">分隔线</h3>
 <hr>
 </section>
+<section id="公式编号与引用" class="level3">
+<h3 class="anchored" data-anchor-id="公式编号与引用">公式编号与引用</h3>
+<p>带编号的公式如下：</p>
+<p><span id="eq-ate"><span class="math display">\[
+\\tau = E[Y(1) - Y(0)]
+\tag{1}\]</span></span></p>
+<p>在正文中引用该公式：见公式 <a href="#eq-ate" class="quarto-xref">Equation&nbsp;<span>1</span></a>。</p>
+</section>
+<section id="图注与交叉引用" class="level3">
+<h3 class="anchored" data-anchor-id="图注与交叉引用">图注与交叉引用</h3>
+<div id="fig-workflow" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-workflow-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="cover.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-workflow-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: 示意图：AI加速研究的简单流程
+</figcaption>
+</figure>
+</div>
+<p>在正文中引用该图：见图 <a href="#fig-workflow" class="quarto-xref">Figure&nbsp;<span>1</span></a>。</p>
+</section>
 </section>
 <section id="code-and-data" class="level2">
 <h2 class="anchored" data-anchor-id="code-and-data">Code and data</h2>
@@ -509,6 +558,11 @@ Open access • Print version coming soon.</p>
 - 站点: https://yuzhangsjtu.github.io/AAAR/</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-knuth84" class="csl-entry" role="listitem">
+Knuth, Donald E. 1984. <span>“Literate Programming.”</span> <em>Comput. J.</em> 27 (2): 97–111. <a href="https://doi.org/10.1093/comjnl/27.2.97">https://doi.org/10.1093/comjnl/27.2.97</a>.
+</div>
+</div>
 </section>
 </section>
 <section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
