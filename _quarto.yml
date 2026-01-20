@@ -44,7 +44,7 @@ format:
     page-navigation: true
     number-depth: 2
     include-in-header: includes/header.html
-    mathjax: true
+    html-math-method: mathjax
   pdf:
     documentclass: scrreprt
     toc: true
