@@ -1,0 +1,113 @@
+{
+  "index.qmd": {
+    "index.html": "c8379426"
+  },
+  "01-introduction.qmd": {
+    "01-introduction.html": "da258927"
+  },
+  "02-probability_and_regression.qmd": {
+    "02-probability_and_regression.html": "7fbebffe"
+  },
+  "03-directed_acyclical_graphs.qmd": {
+    "03-directed_acyclical_graphs.html": "89b3c835"
+  },
+  "04-potential_outcomes.qmd": {
+    "04-potential_outcomes.html": "da5d4b08"
+  },
+  "05-matching_and_subclassification.qmd": {
+    "05-matching_and_subclassification.html": "730fe256"
+  },
+  "06-regression_discontinuity.qmd": {
+    "06-regression_discontinuity.html": "67f31102"
+  },
+  "07-instrumental_variables.qmd": {
+    "07-instrumental_variables.html": "f2857f17"
+  },
+  "08-panel_data.qmd": {
+    "08-panel_data.html": "c61f77b2"
+  },
+  "09-difference_in_differences.qmd": {
+    "09-difference_in_differences.html": "16cf7841"
+  },
+  "10-synthetic_control.qmd": {
+    "10-synthetic_control.html": "0eeb43b8"
+  },
+  "conclusion.qmd": {
+    "conclusion.html": "09293a27"
+  },
+  "acknowledgments.qmd": {
+    "acknowledgments.html": "963f68c1"
+  },
+  "errata.qmd": {
+    "errata.html": "f604e16c"
+  },
+  "mixtape_sessions.qmd": {
+    "mixtape_sessions.html": "21c563dd"
+  },
+  "teaching_tools.qmd": {
+    "teaching_tools.html": "0ad7c33c"
+  },
+  "references.qmd": {
+    "references.html": "a232d128"
+  },
+  "outline/00-序章-为什么写这本书.md": {
+    "00-序章-为什么写这本书.html": "ef2835ff"
+  },
+  "outline/01-AI能做什么不能做什么.md": {
+    "01-AI能做什么不能做什么.html": "50550bc7"
+  },
+  "outline/02-幻觉偏差泄露.md": {
+    "02-幻觉偏差泄露.html": "8c503801"
+  },
+  "outline/03-提示词不是方法论.md": {
+    "03-提示词不是方法论.html": "b5cfc712"
+  },
+  "outline/04-信息压缩与文献整理.md": {
+    "04-信息压缩与文献整理.html": "eb6a4a64"
+  },
+  "outline/05-结构化表达与写作.md": {
+    "05-结构化表达与写作.html": "e4b8f3c9"
+  },
+  "outline/06-代码与计算能力.md": {
+    "06-代码与计算能力.html": "b3c7c2ac"
+  },
+  "outline/07-知识管理与协作.md": {
+    "07-知识管理与协作.html": "964511d4"
+  },
+  "outline/08-选题与研究问题.md": {
+    "08-选题与研究问题.html": "a0e6f5c7"
+  },
+  "outline/09-文献与理论构建.md": {
+    "09-文献与理论构建.html": "c8b88626"
+  },
+  "outline/10-数据获取与构造.md": {
+    "10-数据获取与构造.html": "02fab284"
+  },
+  "outline/11-数据清洗与分析.md": {
+    "11-数据清洗与分析.html": "d073a01b"
+  },
+  "outline/12-写作投稿与传播.md": {
+    "12-写作投稿与传播.html": "582088f7"
+  },
+  "outline/13-RA-level.md": {
+    "13-RA-level.html": "54623056"
+  },
+  "outline/14-Supervisor-level.md": {
+    "14-Supervisor-level.html": "41e516e7"
+  },
+  "outline/15-Domain-expert-level.md": {
+    "15-Domain-expert-level.html": "808fc7dd"
+  },
+  "outline/16-Agent-level.md": {
+    "16-Agent-level.html": "966ae481"
+  },
+  "outline/17-Governance-level.md": {
+    "17-Governance-level.html": "521e8838"
+  },
+  "outline/18-终章-AI时代研究者的新能力结构.md": {
+    "18-终章-AI时代研究者的新能力结构.html": "8fac5000"
+  },
+  "outline/19-附录.md": {
+    "19-附录.html": "1327e0e5"
+  }
+}

@@ -1,0 +1,26 @@
+# Welcome {.unnumbered}
+
+This is the landing page for your Quarto book. Use it to introduce the project,
+explain the audience, and link to code, data, or teaching materials.
+
+::: {.cover-box .shadow-md}
+## Buy Today!
+
+**Your Book Title**  
+Print version coming soon.
+
+<div class="cover-actions">
+  <a href="#">Buy from Amazon</a>
+  <a href="#">Buy from Publisher</a>
+  <a href="causal-inference-mixtape.pdf">Download PDF</a>
+</div>
+:::
+
+## How to use this book
+
+Briefly explain how readers should move through chapters, and what the
+prerequisites are.
+
+## Code and data
+
+Add links to your repository and datasets here.

@@ -1,0 +1,242 @@
+[
+  {
+    "objectID": "outline/00-序章-为什么写这本书.html",
+    "href": "outline/00-序章-为什么写这本书.html",
+    "title": "1  序章｜为什么写这本书",
+    "section": "",
+    "text": "这本书写给所有在学术工作中与AI打交道的人：从本科生到教授，从刚入门的研究者到成熟的学术团队。它不是工具手册，也不是“提示词大全”，更不是用新名词包装旧流程的营销文案。我写它的动机很直接：我看过不少所谓“AI科研指南”，内容堆砌、缺乏方法论、回避风险与责任，读完只能学会“更快地产出”，而不是“更好地研究”。\n我希望这本书提供三件更有价值的东西。第一，是一个可持续的思维框架：AI能做什么、不能做什么，它的边界在哪里，以及我们如何把它放进研究流程而不是让它取代研究思考。第二，是一套可复现的工作流：每个环节都给出“人—AI协作”的方式，强调可验证、可追溯、可复现。第三，是必要的批判性：AI让研究更快，但也可能让研究变浅、变空、变得更像写作而不是发现。\n为了让不同读者都能用得上，我把内容写成“多入口”的结构。你可以从能力模块切入，也可以从科研工作流切入；如果你已经熟悉工具，直接看五层次框架也能得到更高层的判断。全书会同时覆盖社会科学和非社会科学的例子，但主场仍是社科，因为它最能体现AI与方法论之间的张力。\n最后，这本书是开源的。开源不只是“免费”，更是对可复现与可纠错的承诺：你可以看到我的修改记录、案例来源、工具版本，也可以对我的错误提出质疑。这是我对AI时代学术写作的基本态度。",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>序章｜为什么写这本书</span>"
+    ]
+  },
+  {
+    "objectID": "outline/01-AI能做什么不能做什么.html",
+    "href": "outline/01-AI能做什么不能做什么.html",
+    "title": "2  第1章 AI能做什么，不能做什么",
+    "section": "",
+    "text": "AI最擅长的不是“正确”，而是“像”。它能在语言上高度拟合学术表达的样子，能快速压缩文本、重写段落、生成结构化输出，但这并不等于它理解或验证了事实。研究者要先看清这一点：AI是生成式系统，不是知识库、也不是裁判。\n一个实用的判断方式是把AI能力分成四类：压缩、改写、重组、推理。压缩指摘要与信息提取；改写指语言润色与风格转换；重组指把散乱信息结构化；推理则是它最容易被高估的能力，因为模型擅长“构造合理解释”，却未必能承担“正确推导”的责任。\n因此，AI“很强但不可靠”的根源在于：它更像一个高水平写作者，而不是可靠的事实校验器。你可以让它生成思路、提出假设、搭建框架，但关键环节必须回到人类研究者的验证流程里。把AI当成“高效助手”，而不是“权威来源”，这是这本书的首要原则。",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>第1章 AI能做什么，不能做什么</span>"
+    ]
+  },
+  {
+    "objectID": "outline/02-幻觉偏差泄露.html",
+    "href": "outline/02-幻觉偏差泄露.html",
+    "title": "3  第2章 幻觉、偏差、泄露：三类核心风险",
+    "section": "",
+    "text": "AI带来的最大问题不是“效率”，而是“错误的效率”。三类风险贯穿所有研究流程：幻觉、偏差、泄露。它们不只是技术问题，更是方法论和伦理问题。\n幻觉是模型在不确定时仍然给出流畅答案的倾向。它在科研中的危害不在于“出现错误”，而在于“错误看起来合理”。这会侵蚀研究者的判断力，尤其在文献综述、理论归纳、背景介绍等环节，幻觉常以“自信口吻”呈现，导致难以识别。\n偏差来自模型训练数据与对齐机制，会在不知不觉中渗入研究。比如对某些群体的刻板印象、对某些研究范式的偏好，都会影响输出。研究者必须意识到：AI的“中立语气”并不意味着“中立立场”。\n泄露则是更现实的风险。把未发表的研究数据、敏感信息或受限数据直接输入模型，会带来合规与伦理问题。即便使用本地模型，也要考虑数据治理与权限边界。使用AI前先回答一个问题：这份数据能否被任何人看到？如果答案是否定的，就不应该直接交给模型处理。",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>第2章 幻觉、偏差、泄露：三类核心风险</span>"
+    ]
+  },
+  {
+    "objectID": "outline/03-提示词不是方法论.html",
+    "href": "outline/03-提示词不是方法论.html",
+    "title": "4  第3章 提示词不是方法论",
+    "section": "",
+    "text": "提示词能提升输出质量，但它解决不了“研究结构”的问题。很多AI教程把提示词当作核心技巧，却忽视了研究的真正难点：问题的清晰性、证据的可信度、推理链条的完整性。这些并不会因为一个漂亮的提示词而自动出现。\n更有效的思路是把提示词看成“流程中的一个步骤”。你需要的是可重复的研究系统：输入什么材料、让模型做什么任务、输出如何校验、结果如何记录。一个好系统比一千个提示词更重要，因为它能把AI稳定地嵌入你的研究实践中。\n因此，本书不提供“万能提示词”，而提供“工作流原则”：任务拆解、层级输出、验证机制、版本记录。提示词只是表层，方法论才是底层。",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>第3章 提示词不是方法论</span>"
+    ]
+  },
+  {
+    "objectID": "outline/04-信息压缩与文献整理.html",
+    "href": "outline/04-信息压缩与文献整理.html",
+    "title": "5  第4章 信息压缩与文献整理",
+    "section": "",
+    "text": "AI最“值钱”的能力之一是信息压缩：把大量材料转化为可读的结构。它能快速梳理文献主题、生成摘要、构建初步的研究地图。但这一步不是终点，只是起点。研究者应把AI输出当成“索引”，而不是“结论”。\n在文献筛选上，AI适合做粗筛与主题聚类，帮助你确认“这个领域的主问题是什么”。但在确定核心文献和理论链条时，需要人工判断。尤其在社科领域，关键争论往往不在摘要里，而在方法与证据的细节中。\n长上下文模型让“一次性阅读几十篇论文”成为可能，但前提是你提供了高质量输入，并能设计输出格式。更重要的是校验引用：任何AI生成的文献综述都必须回到原文核对。可靠的综述不是“写得好”，而是“证据链可追溯”。",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>第4章 信息压缩与文献整理</span>"
+    ]
+  },
+  {
+    "objectID": "outline/05-结构化表达与写作.html",
+    "href": "outline/05-结构化表达与写作.html",
+    "title": "6  第5章 结构化表达与写作",
+    "section": "",
+    "text": "AI能快速生成提纲、段落与结构，这在写作初期非常有用。你可以用它来整理研究框架、提出章节结构、梳理论证顺序。但要记住：结构不是思想，结构只是容器，关键是你要把真正的论证放进去。\n“学术语言”与“AI语言”之间的差别常常被忽视。AI写出来的文字通常流畅、完整，但容易缺乏学术写作所需的精确性与责任感。它倾向于“把话说满”，而研究写作更强调“留出不确定性”。因此，AI生成文本需要二次加工：删去过度自信的表达，补上证据与限定条件。\n在翻译与润色上，AI的优势是速度，但风险是术语与语境的偏差。最好的策略是：让AI做“第一遍粗修”，再由研究者做“关键点审校”。尤其是方法与结果部分，不能完全依赖AI完成。",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>第5章 结构化表达与写作</span>"
+    ]
+  },
+  {
+    "objectID": "outline/06-代码与计算能力.html",
+    "href": "outline/06-代码与计算能力.html",
+    "title": "7  第6章 代码与计算能力",
+    "section": "",
+    "text": "AI对代码的帮助不在于“自动生成”，而在于“降低门槛”。它可以帮助你把模糊想法转成可运行的脚本，减少重复劳动，并在遇到错误时快速定位问题。但这不意味着你可以不理解代码。任何研究级分析都要求你能解释每一步处理逻辑。\n在数据清洗、格式转换、批量处理等任务上，AI的效率优势非常明显。它能快速给出脚本框架和可复用函数，适合用作“草稿生成器”。你应当把它当作代码搭子：让它产出、让你审核、共同迭代。\n在统计分析与可视化上，AI可以协助你构建模型、输出图表，但不能替代对模型假设的理解。模型选择、变量定义、结果解释都属于研究者的责任。AI提供的是加速，而不是合法性。",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>第6章 代码与计算能力</span>"
+    ]
+  },
+  {
+    "objectID": "outline/07-知识管理与协作.html",
+    "href": "outline/07-知识管理与协作.html",
+    "title": "8  第7章 知识管理与协作",
+    "section": "",
+    "text": "AI的最大价值之一是“对话式启发”，但对话如果不被整理，就会迅速消失。研究需要记录、归档与版本管理。你需要把AI对话转成可检索的研究材料，而不是散落的聊天记录。\n一个可用的流程是：对话→摘要→标签→归档。每次关键对话都应输出结构化总结，并注明时间、模型、提示词与用途。这些记录构成研究的“隐形材料”，决定了你能否复现自己的思路。\n在团队协作中，AI既能提升效率，也会模糊责任边界。谁写的、谁验证的、谁承担错误？这些问题必须在协作中明确。开源和透明不只是技术选择，也是团队协作的伦理底线。",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>第7章 知识管理与协作</span>"
+    ]
+  },
+  {
+    "objectID": "outline/08-选题与研究问题.html",
+    "href": "outline/08-选题与研究问题.html",
+    "title": "9  第8章 选题与研究问题",
+    "section": "",
+    "text": "选题阶段是AI最容易“帮倒忙”的环节。它能快速生成许多漂亮的问题，但这些问题往往缺乏可检验性、现实可行性或理论价值。研究者必须先明确研究问题的“可研究性”，再使用AI辅助拆解。\n一个有效的方法是先由人写出核心问题，再让AI做“多角度压力测试”：是否存在可用数据？是否已有大量研究？是否存在明确的识别路径？AI擅长从多个角度给出提醒，但这些提醒必须由研究者来做最终判断。\n最常见的风险是“问题被做空”：AI倾向于把复杂问题简化为泛化叙述，导致研究失去锋利度。研究者要主动保持问题的边界感，避免被AI“优化成毫无棱角的宏大命题”。",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>第8章 选题与研究问题</span>"
+    ]
+  },
+  {
+    "objectID": "outline/09-文献与理论构建.html",
+    "href": "outline/09-文献与理论构建.html",
+    "title": "10  第9章 文献与理论构建",
+    "section": "",
+    "text": "AI可以帮你搭建“文献地图”，但搭建“理论链条”仍然需要研究者的判断力。文献地图强调覆盖面，理论链条强调逻辑性。二者不是同一件事。\n在文献整理阶段，AI适合做主题聚合与脉络描述：哪些研究关注同一问题、哪些方法常被使用、哪些争议存在。但理论构建需要你明确变量关系与因果机制，AI只能辅助解释，不能替你承担理论责任。\n所谓“AI综述陷阱”是指：输出看起来完整，但引用无法核对，或者概念混杂不清。避免陷阱的办法是把AI综述当成“初稿目录”，逐条回到原文校验，并用“证据链”替换“叙述链”。",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>第9章 文献与理论构建</span>"
+    ]
+  },
+  {
+    "objectID": "outline/10-数据获取与构造.html",
+    "href": "outline/10-数据获取与构造.html",
+    "title": "11  第10章 数据获取与构造",
+    "section": "",
+    "text": "数据获取是AI加速最明显的环节之一。无论是公开数据、爬虫还是API接口，AI都能帮助你快速写出脚本并完成批量抓取。但“获取速度”不等于“数据质量”，任何数据都需要清晰的采集记录与合法性说明。\nAI生成数据是更具争议的方向。它可以用于模拟、训练或思维实验，但不能轻易替代真实样本。研究者必须区分“生成数据用于方法测试”和“生成数据用于经验结论”这两种完全不同的用途。\n“硅样本”的方法论争议在于：AI是否能代表人类行为？如果AI是研究对象，它本身就不是“人”。使用硅样本必须明确其理论定位，否则会把“模型输出”误当成“社会事实”。",
+    "crumbs": [
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>第10章 数据获取与构造</span>"
+    ]
+  },
+  {
+    "objectID": "outline/11-数据清洗与分析.html",
+    "href": "outline/11-数据清洗与分析.html",
+    "title": "12  第11章 数据清洗与分析",
+    "section": "",
+    "text": "数据清洗是科研中最耗时也最容易被忽略的环节。AI的优势在于快速生成清洗脚本和规则，尤其适用于文本数据的结构化处理。但清洗规则背后往往包含方法论选择，这些选择必须透明化、可解释、可复现。\n在统计分析阶段，AI可以帮助搭建模型、生成图表、解释结果，但研究者必须对模型假设负责。AI擅长“讲故事”，但不擅长“守住边界”。如果你让AI解释结果，它可能会给出看似合理但并不严谨的因果叙述。\n因此，AI的角色应该是“分析助手”，而不是“结论生成器”。任何结论性表述必须回到数据与方法本身，这是学术研究的底线。",
+    "crumbs": [
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>第11章 数据清洗与分析</span>"
+    ]
+  },
+  {
+    "objectID": "outline/12-写作投稿与传播.html",
+    "href": "outline/12-写作投稿与传播.html",
+    "title": "13  第12章 写作、投稿与传播",
+    "section": "",
+    "text": "AI最受欢迎的应用场景是写作。你可以用它生成初稿、润色语言、调整结构，但这并不意味着它能替你“完成论文”。论文的核心价值来自研究设计与证据，而不是表达方式。\n在投稿流程中，AI可以帮助你整理摘要、润色投稿信、模拟审稿人视角。但“反AI检测”不应该成为研究者的目标。真正合理的策略是：确保内容真实、证据充分、逻辑清晰。所谓“AI味”，往往来自缺乏具体细节与可验证信息，而不是语言风格本身。\n在答辩与传播阶段，AI适合帮助你做摘要、演讲稿与受众调整，但关键观点必须是你自己的。AI可以把话说漂亮，但不能替你承担学术立场。",
+    "crumbs": [
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>第12章 写作、投稿与传播</span>"
+    ]
+  },
+  {
+    "objectID": "outline/13-RA-level.html",
+    "href": "outline/13-RA-level.html",
+    "title": "14  第13章 RA Level：工具层",
+    "section": "",
+    "text": "在工具层，AI等同于一个高效率的研究助理。它能完成大量重复性工作：整理数据、生成初稿、清洗文本、批量翻译。这个层级的核心价值是节省时间和成本。\n但工具层的风险在于“过度依赖”。当AI替代了研究者的基础劳动，研究者也可能丧失对材料的直觉理解。你必须确保自己仍然掌握数据细节和研究逻辑，否则AI的效率会把你带向“看似完成但无法解释”的境地。\n最重要的问题是：谁在控制流程？如果AI的输出驱动了你的研究方向，那么你已经从“使用工具”变成“被工具牵引”。工具层的原则是：AI做脏活累活，人保留判断权。",
+    "crumbs": [
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>第13章 RA Level：工具层</span>"
+    ]
+  },
+  {
+    "objectID": "outline/14-Supervisor-level.html",
+    "href": "outline/14-Supervisor-level.html",
+    "title": "15  第14章 Supervisor Level：认知协作层",
+    "section": "",
+    "text": "在认知协作层，AI不只是执行者，而是“对话式导师”。它能帮助你提出假设、模拟审稿人、补足背景知识，甚至推动你跨学科思考。这一层是AI最有创造性的应用。\n但同样，风险也在于“依赖与懒惰”。当你习惯用AI生成思路，可能会丧失独立构建问题的能力。AI会不断给出“合理建议”，但合理并不等于有价值。研究者必须保持自己的问题意识与判断标准。\n认知协作层的关键是：让AI成为“思维刺激器”，而不是“思维替代品”。你可以借助AI扩展视野，但不能放弃自己的判断。",
+    "crumbs": [
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>第14章 Supervisor Level：认知协作层</span>"
+    ]
+  },
+  {
+    "objectID": "outline/15-Domain-expert-level.html",
+    "href": "outline/15-Domain-expert-level.html",
+    "title": "16  第15章 Domain Expert Level：推理与建模层",
+    "section": "",
+    "text": "在推理与建模层，AI能够模拟“领域专家”的思维方式，帮助你理解模型、构建算法或补齐技术短板。对跨学科研究者而言，这一层极具价值，因为它能缩短学习曲线。\n但必须明确：推理不等于理论。AI可以生成“看似合理”的模型，却不一定满足学科内部的规范与逻辑要求。理论构建需要领域知识、文献脉络与方法论约束，而这些不是AI能自动承担的。\n这一层的正确使用方式是：让AI提供“草稿与解释”，由研究者完成“理论合法性与方法论判断”。领域知识的不可替代性，恰恰是学术研究者的核心价值。",
+    "crumbs": [
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>第15章 Domain Expert Level：推理与建模层</span>"
+    ]
+  },
+  {
+    "objectID": "outline/16-Agent-level.html",
+    "href": "outline/16-Agent-level.html",
+    "title": "17  第16章 Agent Level：AI作为行动者",
+    "section": "",
+    "text": "当AI开始模拟人类、参与互动或自动决策时，它不再只是工具，而成为“行动者”。这对社会科学提出新的本体论问题：研究对象是否还仅限于“人”？当AI参与社会系统，它是否也构成社会事实的一部分？\n在这一层，AI被用来构建虚拟社会、模拟行为、生成硅样本。这些方法可以帮助研究者探索复杂系统，但也必须承认其局限性：模型输出并不等于真实社会。虚拟样本的价值在于“实验性启发”，而不是“经验结论”。\nAgent层提醒我们：AI不仅改变研究工具，也改变研究对象。研究者必须明确自己是在研究“人”、还是研究“人—AI互动”，或是研究“AI本体”。这些区分决定了理论框架与解释边界。",
+    "crumbs": [
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>第16章 Agent Level：AI作为行动者</span>"
+    ]
+  },
+  {
+    "objectID": "outline/17-Governance-level.html",
+    "href": "outline/17-Governance-level.html",
+    "title": "18  第17章 Governance Level：制度与治理层",
+    "section": "",
+    "text": "在治理层，问题已经超越“如何使用AI”，而是“AI如何改变学术制度”。当AI可以大规模生成文本，学术评价体系会发生什么变化？当研究流程被自动化，学术劳动的价值如何被重新定义？\n这一层的核心是结构性影响：论文产出可能变得更快，但“学术质量”可能被稀释；评审机制可能更依赖表面表达，忽视真实研究价值。AI带来的不是简单的效率提升，而是制度逻辑的重构。\n研究者需要在治理层承担新的责任：明确AI使用边界、推动透明化、参与学术伦理讨论。真正的挑战不是“AI能不能用”，而是“学术共同体如何定义可信”。",
+    "crumbs": [
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>第17章 Governance Level：制度与治理层</span>"
+    ]
+  },
+  {
+    "objectID": "outline/18-终章-AI时代研究者的新能力结构.html",
+    "href": "outline/18-终章-AI时代研究者的新能力结构.html",
+    "title": "19  终章｜AI时代研究者的新能力结构",
+    "section": "",
+    "text": "AI让研究更快，这是事实。但更快不等于更深。真正的问题是：在AI时代，研究者的不可替代能力是什么？答案不是“会用工具”，而是“能够提出问题、建立证据链、守住方法论边界”。\n未来的研究者需要新的能力结构：一是系统化的问题意识；二是对证据的严格要求；三是对AI输出的批判性判断。AI可以帮助你节省时间，但它不会替你承担学术责任。\n开源在这个时代变得更重要。它不仅是分享资源，更是对学术可信度的回应。面对AI可能带来的“空洞高产”，开源与可复现是一种必要的抵抗：把研究拉回事实、证据与共同体的监督之中。",
+    "crumbs": [
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>终章｜AI时代研究者的新能力结构</span>"
+    ]
+  },
+  {
+    "objectID": "outline/19-附录.html",
+    "href": "outline/19-附录.html",
+    "title": "20  附录（可选）",
+    "section": "",
+    "text": "本书后续版本将提供以下配套材料，全部开源更新：\n\nAI科研工具箱清单（按任务分类）\n提示词模板与工作流脚本（可复用）\n案例复现材料与数据链接（含版本号）\nAI使用伦理与声明模板（投稿与答辩场景）\n\n附录的目的不是堆工具，而是让方法论落地。读者可以根据自己的研究领域替换工具，但不应跳过验证与记录步骤。",
+    "crumbs": [
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>附录（可选）</span>"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Causal InferenceThe Mixtape",
+    "section": "",
+    "text": "Welcome\nThis is the landing page for your Quarto book. Use it to introduce the project, explain the audience, and link to code, data, or teaching materials.",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "index.html#buy-today",
+    "href": "index.html#buy-today",
+    "title": "Causal InferenceThe Mixtape",
+    "section": "Buy Today!",
+    "text": "Buy Today!\nYour Book Title\nPrint version coming soon.\n\nBuy from Amazon Buy from Publisher Download PDF",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "index.html#how-to-use-this-book",
+    "href": "index.html#how-to-use-this-book",
+    "title": "Causal InferenceThe Mixtape",
+    "section": "How to use this book",
+    "text": "How to use this book\nBriefly explain how readers should move through chapters, and what the prerequisites are.",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "index.html#code-and-data",
+    "href": "index.html#code-and-data",
+    "title": "Causal InferenceThe Mixtape",
+    "section": "Code and data",
+    "text": "Code and data\nAdd links to your repository and datasets here.",
+    "crumbs": [
+      "Welcome"
+    ]
+  }
+]

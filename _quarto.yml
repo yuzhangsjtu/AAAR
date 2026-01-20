@@ -1,0 +1,57 @@
+project:
+  type: book
+
+book:
+  title: "<span style='font-weight: 700'>Causal Inference</span><br><i style='color: #00b7ff'>The Mixtape</i>"
+  output-file: "causal-inference-mixtape"
+  author: "Your Name"
+  date: "2026-01-15"
+  site-url: "https://example.com"
+  repo-url: "https://github.com/yourname/yourbook"
+  repo-actions: [issue]
+  downloads: [pdf]
+  chapters:
+    - index.qmd
+    - outline/00-序章-为什么写这本书.md
+    - outline/01-AI能做什么不能做什么.md
+    - outline/02-幻觉偏差泄露.md
+    - outline/03-提示词不是方法论.md
+    - outline/04-信息压缩与文献整理.md
+    - outline/05-结构化表达与写作.md
+    - outline/06-代码与计算能力.md
+    - outline/07-知识管理与协作.md
+    - outline/08-选题与研究问题.md
+    - outline/09-文献与理论构建.md
+    - outline/10-数据获取与构造.md
+    - outline/11-数据清洗与分析.md
+    - outline/12-写作投稿与传播.md
+    - outline/13-RA-level.md
+    - outline/14-Supervisor-level.md
+    - outline/15-Domain-expert-level.md
+    - outline/16-Agent-level.md
+    - outline/17-Governance-level.md
+    - outline/18-终章-AI时代研究者的新能力结构.md
+    - outline/19-附录.md
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: default
+    css: css/causal_inference_style.css
+    toc: true
+    search: true
+    page-navigation: true
+    number-depth: 2
+    include-in-header: includes/header.html
+  pdf:
+    documentclass: scrreprt
+    toc: true
+    output-file: causal-inference-mixtape.pdf
+    include-in-header: includes/pdf-title-font.tex
+    mainfont: "PingFang SC"
+    sansfont: "PingFang SC"
+    monofont: "Menlo"
+
+
+
