@@ -47,12 +47,14 @@ format:
     html-math-method: mathjax
   pdf:
     documentclass: scrreprt
+    pdf-engine: xelatex
     toc: true
     output-file: aaar-ai-accelerating-academic-research.pdf
     geometry:
       - margin=1in
     fontsize: 10pt
     include-in-header: includes/pdf-title-font.tex
+    CJKmainfont: "PingFang SC"
     mainfont: "PingFang SC"
     sansfont: "PingFang SC"
     monofont: "Menlo"
