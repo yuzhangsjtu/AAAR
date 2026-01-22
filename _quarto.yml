@@ -1,5 +1,6 @@
 project:
   type: book
+  output-dir: docs
 
 book:
   title: "AAAR：AI加速学术研究的方法论与经验"
