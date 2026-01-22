@@ -1,0 +1,307 @@
+:root{
+  --color-black: #1f1e1d;
+  --color-light-grey: #f6f4ef;
+  --color-dark-grey:  #b0aea5;
+  --color-highlight: #2c84db;
+  --color-dark-highlight:#1e5f9e;
+  --measurement: 2px;
+  --bs-primary: #2c84db;
+  --bs-primary-rgb: 44, 132, 219;
+}
+
+/* Hide "Edit" links if enabled */
+.book-extra {
+  display: none;
+}
+
+/* Typography */
+body {
+  font-family: "Songti SC", "Times New Roman", "Georgia", serif;
+  background: #f6f4ef;
+  color: #1f1e1d;
+  line-height: 1.85;
+}
+
+h1, h2, h3 {
+  font-family: "PingFang SC", "Helvetica Neue", "Inter", sans-serif;
+  letter-spacing: 0.3px;
+  color: #141413;
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.8rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+  margin-top: 2.2rem;
+  margin-bottom: 0.8rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-top: 1.6rem;
+  margin-bottom: 0.6rem;
+}
+
+/* Paragraph indentation for Chinese reading flow */
+.content p {
+  text-indent: 2em;
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+.sidebar h1 {
+  font-size: 1.5rem;
+}
+
+.nav-tabs .nav-link {
+  color: #2c84db !important;
+}
+
+a:hover,
+div.sidebar-item-container .active,
+div.sidebar-item-container .show > .nav-link,
+div.sidebar-item-container .sidebar-link > code {
+  color: #1e5f9e !important;
+}
+
+/* Page layout */
+@media (min-width: 1240px) {
+  body.floating .page-columns {
+    display: grid;
+    gap: 0;
+    grid-template-columns:
+      [screen-start] 1.5em
+      [screen-start-inset] 5fr
+      [page-start] minmax(25px, 50px)
+      [page-start-inset] minmax(50px, 150px)
+      [body-start-outset] minmax(25px, 50px)
+      [body-start] 4em
+      [body-content-start] minmax(500px, calc(800px - 3em))
+      [body-content-end] 4em
+      [body-end] minmax(25px, 50px)
+      [body-end-outset] minmax(50px, 150px)
+      [page-end-inset] minmax(25px, 50px)
+      [page-end] 5fr
+      [screen-end-inset] 1.5em
+      [screen-end];
+  }
+}
+
+/* Sidebar styling */
+.sidebar {
+  background: #f4f1ea;
+  border-right: 1px solid #e6dfd6;
+}
+
+.sidebar-title a {
+  font-family: "PingFang SC", "Helvetica Neue", "Inter", sans-serif;
+  font-weight: 600;
+  color: #141413;
+}
+
+.sidebar-item-text {
+  color: #2b2a27;
+}
+
+.sidebar .active,
+.sidebar a:hover {
+  color: #1e5f9e !important;
+}
+
+.quarto-page-breadcrumbs .breadcrumb {
+  font-family: "PingFang SC", "Helvetica Neue", "Inter", sans-serif;
+  color: #5e5d59;
+}
+
+/* TOC and nav */
+.toc-title {
+  font-family: "PingFang SC", "Helvetica Neue", "Inter", sans-serif;
+  font-weight: 600;
+  color: #1f1e1d;
+}
+
+.toc-actions a {
+  color: #2c84db;
+}
+
+/* Table footnotes */
+.footnote {
+  text-align: left;
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  color: #5e5d59;
+}
+
+/* Content list styling */
+.content ul,
+#quarto-document-content ul {
+  list-style-type: disc;
+  padding-left: 2em;
+  margin-bottom: 1em;
+}
+
+.content ol,
+#quarto-document-content ol {
+  list-style-type: decimal;
+  padding-left: 2em;
+  margin-bottom: 1em;
+}
+
+.content li,
+#quarto-document-content li {
+  margin-bottom: 0.4em;
+}
+
+/* Footnote list styling */
+.footnotes {
+  font-size: 0.95rem;
+  color: #4f4f4f;
+}
+
+.footnotes ol {
+  padding-left: 1.2rem;
+}
+
+.footnotes li {
+  margin-bottom: 0.6rem;
+}
+
+/* Table of contents */
+h1 small {
+  display: block;
+}
+
+/* Cover box */
+.cover-box {
+  padding: 8px 16px;
+  margin: 16px 0 32px 0;
+  border: 1px solid #d9d4c8;
+  border-radius: 4px;
+  background: #fbfaf7;
+}
+
+.shadow {
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+}
+
+.shadow-md {
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+
+.cover-img img {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cover-text h2 {
+  margin-top: 16px;
+}
+
+/* Sidebar title styling */
+.sidebar-title a {
+  text-decoration: none;
+}
+
+.sidebar-title span {
+  font-weight: 700;
+}
+
+/* Cover buttons */
+.cover-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.cover-actions a {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 4px;
+  border: 1px solid #d9d4c8;
+  text-decoration: none;
+  color: #1f1e1d;
+  background: #fdfcf9;
+}
+
+.cover-actions a:hover {
+  border-color: #2c84db;
+  color: #1e5f9e;
+}
+
+/* Content width and typography */
+.content {
+  max-width: 760px;
+  font-size: 1.05rem;
+}
+
+.content p {
+  max-width: 72ch;
+}
+
+.content hr {
+  border: none;
+  border-top: 1px solid #e6dfd6;
+  margin: 2rem 0;
+}
+
+.content a {
+  color: #2c84db;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(44, 132, 219, 0.3);
+}
+
+.content a:hover {
+  color: #1e5f9e;
+  border-bottom-color: rgba(30, 95, 158, 0.6);
+}
+
+/* Code blocks */
+pre, code {
+  background: #f2efe9;
+  font-family: "JetBrains Mono", "Menlo", "SFMono-Regular", monospace;
+}
+
+pre {
+  border: 1px solid #e1ddd3;
+  padding: 12px 14px;
+}
+
+/* Tables */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table th,
+table td {
+  border-bottom: 1px solid #e6dfd6;
+  padding: 8px 10px;
+}
+
+/* Blockquotes */
+blockquote {
+  border-left: 3px solid #d9d4c8;
+  padding-left: 16px;
+  color: #4f4f4f;
+  background: #f9f7f2;
+}
+
+/* Buttons and callouts */
+.btn, .quarto-btn-toggle {
+  border-radius: 6px;
+  background: #f9f7f2;
+  border: 1px solid #e1ddd3;
+}
+
+/* Reduce visual noise in header */
+#quarto-header {
+  background: #f6f4ef;
+  border-bottom: 1px solid #e6dfd6;
+}
