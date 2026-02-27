@@ -13,26 +13,30 @@ book:
   downloads: [pdf]
   chapters:
     - index.qmd
-    - outline/00-序章-为什么写这本书.md
-    - outline/01-AI能做什么不能做什么.md
-    - outline/02-幻觉偏差泄露.md
-    - outline/03-提示词不是方法论.md
-    - outline/04-信息压缩与文献整理.md
-    - outline/05-结构化表达与写作.md
-    - outline/06-代码与计算能力.md
-    - outline/07-知识管理与协作.md
-    - outline/08-选题与研究问题.md
-    - outline/09-文献与理论构建.md
-    - outline/10-数据获取与构造.md
-    - outline/11-数据清洗与分析.md
-    - outline/12-写作投稿与传播.md
-    - outline/13-RA-level.md
-    - outline/14-Supervisor-level.md
-    - outline/15-Domain-expert-level.md
-    - outline/16-Agent-level.md
-    - outline/17-Governance-level.md
-    - outline/18-终章-AI时代研究者的新能力结构.md
-    - outline/19-附录.md
+    - part: "第一部分：建立判断力"
+      chapters:
+        - outline/01-从聊天机器人到通用智能.md
+        - outline/02-锯齿状的智能.md
+        - outline/03-遍地神灯的时代.md
+        - outline/04-思考不能外包.md
+    - part: "第二部分：AI 工具与技巧"
+      chapters:
+        - outline/05-智能搜索与文献发现.md
+        - outline/06-文献阅读与知识管理.md
+        - outline/07-AI编程与数据分析.md
+        - outline/08-AI辅助写作.md
+        - outline/09-AI-Agent与工作流自动化.md
+        - outline/10-图像生成与多模态.md
+    - part: "第三部分：案例与实践"
+      chapters:
+        - outline/11-AI作为研究助理.md
+        - outline/12-AI辅助项目管理.md
+        - outline/13-AI作为领域专家.md
+        - outline/14-AI作为独立行动者.md
+        - outline/15-伦理与治理.md
+        - outline/16-一个完整的AI科研工作流.md
+    - outline/17-终章-AI时代的研究者.md
+    - outline/18-附录.md
 
 bibliography: references.bib
 
