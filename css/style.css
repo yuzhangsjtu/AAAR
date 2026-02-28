@@ -1,0 +1,806 @@
+/* =============================================
+   AAAR Book — "Scholar" Design System
+   Modern Chinese Academic Digital Publishing
+   ============================================= */
+
+/* ---- Design Tokens ---- */
+:root {
+  /* Color Palette */
+  --bg: #FAFAF8;
+  --bg-alt: #F3F1EB;
+  --bg-sidebar: #F5F3ED;
+  --bg-code: #F5F3EE;
+  --bg-card: #FFFFFF;
+  --bg-hover: #EEECE5;
+
+  --border: #E2DED4;
+  --border-light: #ECEAE3;
+
+  --ink: #1C1917;
+  --ink-2: #44403C;
+  --ink-3: #78716C;
+  --ink-4: #A8A29E;
+  --ink-5: #D6D3CD;
+
+  --accent: #0F766E;
+  --accent-hover: #0D5D57;
+  --accent-subtle: rgba(15, 118, 110, 0.07);
+  --accent-bg: rgba(15, 118, 110, 0.03);
+
+  /* Semantic colors for callouts */
+  --color-note: #0369A1;
+  --color-note-bg: rgba(3, 105, 161, 0.04);
+  --color-tip: #15803D;
+  --color-tip-bg: rgba(21, 128, 61, 0.04);
+  --color-warning: #B45309;
+  --color-warning-bg: rgba(180, 83, 9, 0.04);
+  --color-important: #BE123C;
+  --color-important-bg: rgba(190, 18, 60, 0.04);
+  --color-caution: #7C3AED;
+  --color-caution-bg: rgba(124, 58, 237, 0.04);
+
+  /* Typography */
+  --font-body: "Noto Serif SC", "Songti SC", "STSong", Georgia, "Times New Roman", serif;
+  --font-heading: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", -apple-system, sans-serif;
+  --font-ui: "Noto Sans SC", "PingFang SC", -apple-system, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", "Fira Code", "Menlo", "SFMono-Regular", monospace;
+
+  /* Layout */
+  --content-max: 740px;
+
+  /* Effects */
+  --shadow-xs: 0 1px 2px rgba(28, 25, 23, 0.03);
+  --shadow-sm: 0 1px 3px rgba(28, 25, 23, 0.05), 0 1px 2px rgba(28, 25, 23, 0.03);
+  --shadow-md: 0 4px 12px rgba(28, 25, 23, 0.06);
+  --shadow-lg: 0 8px 24px rgba(28, 25, 23, 0.08);
+
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --transition: 200ms var(--ease);
+
+  /* Bootstrap overrides */
+  --bs-primary: #0F766E;
+  --bs-primary-rgb: 15, 118, 110;
+  --bs-link-color: #0F766E;
+  --bs-link-hover-color: #0D5D57;
+}
+
+
+/* ---- Base ---- */
+*,
+*::before,
+*::after {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.95;
+  font-size: 1.05rem;
+  letter-spacing: 0.01em;
+  text-rendering: optimizeLegibility;
+  overflow-wrap: break-word;
+  line-break: strict;
+}
+
+::selection {
+  background: rgba(15, 118, 110, 0.15);
+  color: var(--ink);
+}
+
+/* Hide edit/repo links */
+.book-extra {
+  display: none;
+}
+
+
+/* ---- Typography ---- */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--ink);
+  letter-spacing: -0.01em;
+  font-weight: 700;
+}
+
+/* Chapter title */
+h1 {
+  font-size: 2rem;
+  line-height: 1.35;
+  margin-bottom: 1.5rem;
+  padding-top: 1.6rem;
+  position: relative;
+}
+
+h1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 44px;
+  height: 3px;
+  background: var(--accent);
+  border-radius: 2px;
+}
+
+/* Section numbers in accent color */
+.header-section-number {
+  color: var(--accent);
+  font-weight: 500;
+  margin-right: 0.4em;
+}
+
+h2 {
+  font-size: 1.4rem;
+  line-height: 1.4;
+  margin-top: 2.8rem;
+  margin-bottom: 0.8rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border-light);
+}
+
+h3 {
+  font-size: 1.15rem;
+  line-height: 1.5;
+  margin-top: 2rem;
+  margin-bottom: 0.6rem;
+  color: var(--ink-2);
+}
+
+h4 {
+  font-size: 1.05rem;
+  line-height: 1.5;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--ink-2);
+}
+
+/* Chinese paragraph indentation & reading rhythm */
+.content p,
+#quarto-document-content p {
+  text-indent: 2em;
+  margin-top: 0;
+  margin-bottom: 1.1em;
+  max-width: var(--content-max);
+}
+
+/* No indent in special contexts */
+.callout p,
+.callout-body p,
+.callout-body-container p,
+blockquote p,
+.cover-box p,
+.quarto-title-meta p,
+figure p,
+figcaption p,
+.cell-output p,
+.footnotes p,
+li p {
+  text-indent: 0 !important;
+}
+
+/* Strong / emphasis */
+strong, b {
+  font-weight: 700;
+  color: var(--ink);
+}
+
+
+/* ---- Header ---- */
+#quarto-header {
+  background: rgba(250, 250, 248, 0.85) !important;
+  border-bottom: 1px solid var(--border) !important;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+
+/* ---- Sidebar ---- */
+.sidebar,
+#quarto-sidebar {
+  background: var(--bg-sidebar) !important;
+  border-right: 1px solid var(--border) !important;
+}
+
+/* Custom scrollbar */
+#quarto-sidebar::-webkit-scrollbar {
+  width: 3px;
+}
+#quarto-sidebar::-webkit-scrollbar-track {
+  background: transparent;
+}
+#quarto-sidebar::-webkit-scrollbar-thumb {
+  background: var(--ink-5);
+  border-radius: 2px;
+}
+
+/* Book title in sidebar */
+.sidebar-title {
+  padding: 1.2rem 1rem !important;
+}
+
+.sidebar-title a {
+  font-family: var(--font-heading) !important;
+  font-weight: 700 !important;
+  font-size: 0.95rem !important;
+  color: var(--ink) !important;
+  text-decoration: none !important;
+  letter-spacing: -0.01em;
+}
+
+.sidebar-title span {
+  font-weight: 700;
+}
+
+.sidebar h1 {
+  font-size: 1.3rem;
+  padding-top: 0;
+}
+
+.sidebar h1::before {
+  display: none;
+}
+
+/* Nav items */
+.sidebar-item-text,
+.sidebar-item-text a {
+  font-family: var(--font-ui) !important;
+  font-size: 0.87rem !important;
+  color: var(--ink-2) !important;
+  line-height: 1.5;
+  transition: color var(--transition);
+}
+
+/* Part headers */
+.sidebar-item-section > .sidebar-item-text {
+  font-weight: 600 !important;
+  font-size: 0.8rem !important;
+  color: var(--ink-3) !important;
+  letter-spacing: 0.03em;
+  padding-top: 1rem !important;
+}
+
+/* Hover */
+.sidebar-item-text a:hover,
+.sidebar a:hover {
+  color: var(--accent) !important;
+}
+
+/* Active item */
+.sidebar .active,
+.sidebar .sidebar-link.active,
+div.sidebar-item-container .active {
+  color: var(--accent) !important;
+  font-weight: 600 !important;
+  background: var(--accent-subtle) !important;
+  border-left: 3px solid var(--accent);
+  margin-left: -1px;
+}
+
+/* Tab nav */
+.nav-tabs .nav-link {
+  color: var(--accent) !important;
+  font-family: var(--font-ui);
+}
+
+.nav-tabs .nav-link.active {
+  color: var(--accent-hover) !important;
+  border-bottom-color: var(--accent) !important;
+}
+
+div.sidebar-item-container .show > .nav-link,
+div.sidebar-item-container .sidebar-link > code {
+  color: var(--accent) !important;
+}
+
+
+/* ---- Breadcrumbs ---- */
+.quarto-page-breadcrumbs .breadcrumb {
+  font-family: var(--font-ui);
+  font-size: 0.82rem;
+  color: var(--ink-4);
+}
+
+
+/* ---- Content Area ---- */
+.content,
+#quarto-document-content {
+  max-width: var(--content-max);
+  font-size: 1.05rem;
+}
+
+/* Content fade-in animation */
+#quarto-document-content {
+  animation: fadeInUp 0.45s var(--ease) both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* ---- Links ---- */
+.content a,
+#quarto-document-content a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(15, 118, 110, 0.25);
+  transition: color var(--transition), border-color var(--transition);
+}
+
+.content a:hover,
+#quarto-document-content a:hover {
+  color: var(--accent-hover);
+  border-bottom-color: rgba(13, 93, 87, 0.55);
+}
+
+/* Don't underline heading links or nav links */
+h1 a, h2 a, h3 a, h4 a,
+.sidebar a,
+.page-navigation a,
+.toc-actions a,
+nav.toc-active a {
+  border-bottom: none !important;
+}
+
+
+/* ---- Lists ---- */
+.content ul,
+#quarto-document-content ul {
+  list-style-type: disc;
+  padding-left: 2em;
+  margin-bottom: 1em;
+}
+
+.content ol,
+#quarto-document-content ol {
+  list-style-type: decimal;
+  padding-left: 2em;
+  margin-bottom: 1em;
+}
+
+.content li,
+#quarto-document-content li {
+  margin-bottom: 0.4em;
+}
+
+
+/* ---- Code Blocks ---- */
+pre, code {
+  font-family: var(--font-mono) !important;
+  font-size: 0.88em;
+}
+
+code {
+  background: var(--bg-code);
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+  color: var(--ink-2);
+}
+
+pre {
+  background: var(--bg-code) !important;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1rem 1.2rem;
+  overflow-x: auto;
+  line-height: 1.65;
+  margin: 1.5rem 0;
+}
+
+pre code {
+  background: none;
+  padding: 0;
+  border-radius: 0;
+  font-size: 1em;
+}
+
+/* SourceCode containers (Quarto) */
+div.sourceCode {
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 1.5rem 0;
+}
+
+
+/* ---- Blockquotes ---- */
+blockquote {
+  border-left: 3px solid var(--accent);
+  padding: 0.6rem 1.2rem;
+  margin: 1.5rem 0;
+  background: var(--accent-bg);
+  border-radius: 0 8px 8px 0;
+  color: var(--ink-2);
+}
+
+blockquote p {
+  margin-bottom: 0.5em;
+}
+
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* ---- Tables ---- */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.5rem 0;
+  font-size: 0.95rem;
+}
+
+table thead {
+  border-bottom: 2px solid var(--border);
+}
+
+table th {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.88rem;
+  color: var(--ink-2);
+  padding: 0.7rem 0.8rem;
+  text-align: left;
+  background: var(--bg-alt);
+}
+
+table td {
+  padding: 0.7rem 0.8rem;
+  border-bottom: 1px solid var(--border-light);
+}
+
+table tbody tr {
+  transition: background var(--transition);
+}
+
+table tbody tr:hover {
+  background: var(--accent-bg);
+}
+
+
+/* ---- Callouts ---- */
+.callout {
+  border-radius: 8px !important;
+  border: 1px solid var(--border) !important;
+  border-left-width: 4px !important;
+  border-left-color: var(--accent) !important;
+  background: var(--bg-card) !important;
+  margin: 1.8rem 0 !important;
+  box-shadow: var(--shadow-xs);
+  overflow: hidden;
+}
+
+.callout-header {
+  font-family: var(--font-heading) !important;
+  font-weight: 600 !important;
+  font-size: 0.95rem !important;
+  padding: 0.8rem 1rem !important;
+  background: transparent !important;
+}
+
+.callout-body,
+.callout-body-container {
+  padding: 0 1rem 0.8rem !important;
+  font-size: 0.97rem;
+}
+
+/* Callout variants */
+.callout-note {
+  border-left-color: var(--color-note) !important;
+}
+.callout-note .callout-header {
+  background: var(--color-note-bg) !important;
+}
+
+.callout-tip {
+  border-left-color: var(--color-tip) !important;
+}
+.callout-tip .callout-header {
+  background: var(--color-tip-bg) !important;
+}
+
+.callout-warning {
+  border-left-color: var(--color-warning) !important;
+}
+.callout-warning .callout-header {
+  background: var(--color-warning-bg) !important;
+}
+
+.callout-important {
+  border-left-color: var(--color-important) !important;
+}
+.callout-important .callout-header {
+  background: var(--color-important-bg) !important;
+}
+
+.callout-caution {
+  border-left-color: var(--color-caution) !important;
+}
+.callout-caution .callout-header {
+  background: var(--color-caution-bg) !important;
+}
+
+
+/* ---- Images & Figures ---- */
+.content img,
+#quarto-document-content img {
+  border-radius: 6px;
+  max-width: 100%;
+  height: auto;
+}
+
+figure {
+  margin: 2rem 0;
+}
+
+figcaption,
+.figure-caption {
+  font-family: var(--font-ui);
+  font-size: 0.87rem;
+  color: var(--ink-3);
+  text-align: center;
+  margin-top: 0.6rem;
+  line-height: 1.5;
+}
+
+
+/* ---- Horizontal Rules ---- */
+.content hr,
+hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 2.5rem 0;
+}
+
+
+/* ---- Page Navigation (Prev/Next) ---- */
+.page-navigation {
+  border-top: 1px solid var(--border);
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+}
+
+.page-navigation .nav-page a {
+  font-family: var(--font-ui);
+  color: var(--ink-2);
+  text-decoration: none;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  transition: all var(--transition);
+  font-size: 0.92rem;
+}
+
+.page-navigation .nav-page a:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-subtle);
+}
+
+
+/* ---- Right-side Table of Contents ---- */
+.toc-title {
+  font-family: var(--font-heading) !important;
+  font-weight: 600;
+  font-size: 0.78rem !important;
+  color: var(--ink-4);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+nav.toc-active a {
+  font-family: var(--font-ui);
+  font-size: 0.84rem;
+  color: var(--ink-3);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+nav.toc-active a:hover {
+  color: var(--accent);
+}
+
+nav.toc-active a.active {
+  color: var(--accent) !important;
+  font-weight: 500;
+}
+
+.toc-actions a {
+  color: var(--accent) !important;
+  font-size: 0.84rem;
+}
+
+
+/* ---- Footnotes ---- */
+.footnotes {
+  font-size: 0.92rem;
+  color: var(--ink-3);
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-light);
+}
+
+.footnotes ol {
+  padding-left: 1.2rem;
+}
+
+.footnotes li {
+  margin-bottom: 0.5rem;
+}
+
+.footnote {
+  text-align: left;
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  color: var(--ink-3);
+}
+
+
+/* ---- Cover / Index Page ---- */
+.cover-box {
+  padding: 1.5rem 2rem;
+  margin: 1.5rem 0 2.5rem 0;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--bg-card);
+  box-shadow: var(--shadow-sm);
+}
+
+.cover-img img {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 6px;
+  box-shadow: var(--shadow-md);
+}
+
+.cover-text h2 {
+  margin-top: 1rem;
+}
+
+.cover-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.cover-actions a {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  text-decoration: none !important;
+  color: var(--ink-2);
+  background: var(--bg-card);
+  font-family: var(--font-ui);
+  font-size: 0.9rem;
+  transition: all var(--transition);
+}
+
+.cover-actions a:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-subtle);
+}
+
+/* Title metadata (author, date) */
+.quarto-title-meta {
+  font-family: var(--font-ui);
+  font-size: 0.92rem;
+  color: var(--ink-3);
+  margin-top: 0.5rem;
+}
+
+
+/* ---- Buttons ---- */
+.btn,
+.quarto-btn-toggle {
+  border-radius: 8px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  font-family: var(--font-ui);
+  transition: all var(--transition);
+}
+
+.btn:hover,
+.quarto-btn-toggle:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+
+/* ---- Search ---- */
+.aa-DetachedSearchButton {
+  border-radius: 8px !important;
+  border-color: var(--border) !important;
+  font-family: var(--font-ui) !important;
+}
+
+
+/* ---- Page Grid Layout ---- */
+@media (min-width: 1240px) {
+  body.floating .page-columns {
+    display: grid;
+    gap: 0;
+    grid-template-columns:
+      [screen-start] 1.5em
+      [screen-start-inset] 5fr
+      [page-start] minmax(25px, 50px)
+      [page-start-inset] minmax(50px, 150px)
+      [body-start-outset] minmax(25px, 50px)
+      [body-start] 4em
+      [body-content-start] minmax(500px, calc(800px - 3em))
+      [body-content-end] 4em
+      [body-end] minmax(25px, 50px)
+      [body-end-outset] minmax(50px, 150px)
+      [page-end-inset] minmax(25px, 50px)
+      [page-end] 5fr
+      [screen-end-inset] 1.5em
+      [screen-end];
+  }
+}
+
+
+/* ---- Responsive ---- */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  body {
+    font-size: 1rem;
+    line-height: 1.85;
+  }
+
+  .content p,
+  #quarto-document-content p {
+    text-indent: 2em;
+  }
+}
+
+
+/* ---- Print ---- */
+@media print {
+  .sidebar,
+  #quarto-sidebar,
+  #quarto-header {
+    display: none !important;
+  }
+
+  body {
+    background: white;
+    color: black;
+    font-size: 11pt;
+  }
+
+  h1::before {
+    display: none;
+  }
+
+  #quarto-document-content {
+    animation: none;
+  }
+
+  a {
+    color: black !important;
+    border-bottom: none !important;
+  }
+}

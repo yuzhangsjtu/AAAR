@@ -43,7 +43,7 @@ bibliography: references.bib
 format:
   html:
     theme: default
-    css: css/causal_inference_style.css
+    css: css/style.css
     toc: true
     search: true
     page-navigation: true
