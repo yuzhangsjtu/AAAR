@@ -8,7 +8,8 @@
 
 本书中的示例主要基于两个 AI 平台：OpenAI 的 ChatGPT 和 Anthropic 的 Claude。你不需要同时订阅两者，但至少需要一个付费订阅才能获得完整的使用体验。
 
-**ChatGPT Plus / Pro。** 
+**ChatGPT Plus / Pro。**
+
 - ChatGPT Plus（每月 $20）是目前最广泛使用的 AI 订阅，提供 GPT-5.4 Thinking等模型的优先访问，以及联网搜索、代码执行、图片生成、文件上传等功能。对大多数研究者来说，Plus 订阅足以覆盖日常使用。Pro 订阅（每月 $200）提供无限制的模型使用和 5.4 Pro 等高级推理模型的访问权限，适合重度用户或需要频繁处理复杂任务的研究者。此外，闲鱼等平台上有 ChatGPT Team 的拼车订阅，价格相对便宜，但存在账号稳定性和数据隐私方面的风险——如果你的研究涉及敏感数据，不建议使用共享账号。
 - 顺带可以安装codex，是GPT订阅的一部分，做代码review很厉害；
 - Openclaw可以使用GPT的订阅登陆。
@@ -25,7 +26,9 @@
 :::
 
 ### API
+
 如果您暂时无法搞定GPT或者Claude的官方订阅，下面两种替代方式可以尝试：
+
 - 使用国产模型的Coding Plan。目前国产模型都做了Agentic能力优化，比如MiniMax M2.5、Kimi K2.5 Thinking，可以在Claude code或者openclaw中，接入其API；
 - 使用Openrouter提供的API服务，可以使用各种模型，价格会稍微贵一些，但胜在高质量和稳定性；
 - 中转站：不太推荐，很容易产水和数据泄露。
