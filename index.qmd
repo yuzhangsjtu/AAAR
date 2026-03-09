@@ -31,7 +31,7 @@
 
 - 使用国产模型的Coding Plan。目前国产模型都做了Agentic能力优化，比如MiniMax M2.5、Kimi K2.5 Thinking，可以在Claude code或者openclaw中，接入其API；
 - 使用Openrouter提供的API服务，可以使用各种模型，价格会稍微贵一些，但胜在高质量和稳定性；
-- 中转站：不太推荐，很容易产水和数据泄露。
+- 中转站：不太推荐，很容易掺水和数据泄露。
 
 
 ### 编程环境
