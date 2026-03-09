@@ -777,6 +777,102 @@ nav.toc-active a.active {
 }
 
 
+/* ---- AI Conversation Blocks ---- */
+.conversation {
+  margin: 1.8rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.chat-message {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  border-left-width: 4px;
+  margin: 0.4rem 0;
+  overflow: hidden;
+  box-shadow: var(--shadow-xs);
+}
+
+.chat-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.45rem 1rem;
+  font-family: var(--font-ui);
+  font-size: 0.82rem;
+  font-weight: 600;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.chat-body {
+  padding: 0.8rem 1rem;
+  font-size: 0.97rem;
+}
+
+.chat-body p {
+  text-indent: 0 !important;
+  margin-bottom: 0.7em;
+}
+
+.chat-body p:last-child {
+  margin-bottom: 0;
+}
+
+.chat-body pre {
+  margin: 0.8rem 0;
+}
+
+.chat-body ul,
+.chat-body ol {
+  margin-bottom: 0.7em;
+}
+
+/* User / Prompt messages — blue accent */
+.chat-user,
+.chat-prompt {
+  border-left-color: var(--color-note);
+  background: var(--color-note-bg);
+}
+
+.chat-user .chat-header,
+.chat-prompt .chat-header {
+  color: var(--color-note);
+  background: rgba(3, 105, 161, 0.05);
+}
+
+/* Assistant messages — green accent */
+.chat-assistant {
+  border-left-color: var(--color-tip);
+  background: var(--color-tip-bg);
+}
+
+.chat-assistant .chat-header {
+  color: var(--color-tip);
+  background: rgba(21, 128, 61, 0.05);
+}
+
+/* Copy button */
+.chat-copy-btn {
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 1px 10px;
+  font-family: var(--font-ui);
+  font-size: 0.76rem;
+  color: var(--ink-3);
+  cursor: pointer;
+  transition: all var(--transition);
+  line-height: 1.6;
+}
+
+.chat-copy-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-subtle);
+}
+
+
 /* ---- Print ---- */
 @media print {
   .sidebar,

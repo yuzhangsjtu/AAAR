@@ -38,6 +38,9 @@ book:
     - outline/17-终章-AI时代的研究者.md
     - outline/18-附录.md
 
+filters:
+  - _filters/ai-conversation.lua
+
 bibliography: references.bib
 
 format:

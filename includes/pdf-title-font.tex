@@ -8,3 +8,35 @@
 \setlength{\parskip}{0pt}
 \sloppy
 \setlength{\emergencystretch}{6em}
+
+% ── AI Conversation blocks ──
+\usepackage[most]{tcolorbox}
+
+\definecolor{chatblue}{RGB}{3, 105, 161}
+\definecolor{chatbluebg}{RGB}{245, 249, 253}
+\definecolor{chatgreen}{RGB}{21, 128, 61}
+\definecolor{chatgreenbg}{RGB}{244, 251, 246}
+
+\newtcolorbox{aichatuser}{
+  enhanced, breakable,
+  colback=chatbluebg, colframe=chatblue!25,
+  leftrule=3pt, rightrule=0.4pt, toprule=0.4pt, bottomrule=0.4pt,
+  arc=2pt,
+  left=8pt, right=8pt, top=6pt, bottom=6pt,
+  title=Prompt,
+  coltitle=chatblue,
+  fonttitle=\small\sffamily\bfseries,
+  attach title to upper={\par\medskip},
+}
+
+\newtcolorbox{aichatassistant}[1][AI]{
+  enhanced, breakable,
+  colback=chatgreenbg, colframe=chatgreen!25,
+  leftrule=3pt, rightrule=0.4pt, toprule=0.4pt, bottomrule=0.4pt,
+  arc=2pt,
+  left=8pt, right=8pt, top=6pt, bottom=6pt,
+  title=#1,
+  coltitle=chatgreen!80!black,
+  fonttitle=\small\sffamily\bfseries,
+  attach title to upper={\par\medskip},
+}
