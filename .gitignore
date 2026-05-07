@@ -9,3 +9,6 @@ docs/
 
 # Editor
 .cursor/
+
+# Reviewer 产物(临时,不跟踪)
+REVIEW-ch*.md
